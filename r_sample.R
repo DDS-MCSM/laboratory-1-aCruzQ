@@ -1,10 +1,15 @@
-# SAMPLE R FUNCTION
 
-hasIPformat <- function(ip) {
-  b <- as.logical(length(grep("^\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3}$", x = ip)))
-  if (b == TRUE) {
-    k <- unlist(strsplit(ip,".", fixed = TRUE))
-    b <- all(sapply(k, function(x) as.integer(x) < 256) == TRUE)
-  }
-  return(as.logical(b))
-}
+# This is my first R program
+print("Hello World!")
+
+subject   <- "data driven security"
+language  <- "R"
+print(paste("This is a hands on project written in",
+            language,
+            "for ",
+            subject,
+            "subject",
+            sep = " "))
+
+
+
